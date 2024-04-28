@@ -1,113 +1,222 @@
 import Image from "next/image";
+import { Navbar } from '@/components/templates';
+import { Button, Logo, MenuItem } from '@/components/atoms';
+import { LogoBanner } from '@/components/molecules';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div
+      className="from-main-500 to main-600 flex flex-col justify-start items-center relative overflow-hidden gap-[70px] px-[85px] py-7"
+    >
+      <div className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 h-[1061px] gap-20">
+        <Navbar/>
+        <div
+          className="flex justify-start items-end flex-grow-0 flex-shrink-0 w-[1293px] relative gap-[136px]"
+        >
+          <div
+            className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 h-[742px] w-[661px] gap-[85px]"
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            <div
+              className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-[27px]"
+            >
+              <div
+                className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative"
+              >
+                <div
+                  className="flex flex-col justify-center items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-[59px] py-[9px]"
+                >
+                  <p
+                    className="self-stretch flex-grow-0 flex-shrink-0 w-[661px] h-40 text-[45px] font-bold text-left"
+                  >
+                <span
+                  className="self-stretch flex-grow-0 flex-shrink-0 w-[661px] h-40 text-[45px] font-bold text-left text-[#ffc958]"
+                >Follow </span
+                ><span
+                    className="self-stretch flex-grow-0 flex-shrink-0 w-[661px] h-40 text-[45px] font-bold text-left text-white"
+                  >this blueprint </span
+                  ><span
+                    className="self-stretch flex-grow-0 flex-shrink-0 w-[661px] h-40 text-[45px] font-bold text-left text-neutral-100"
+                  >
+                  to</span
+                  ><br/><span
+                    className="self-stretch flex-grow-0 flex-shrink-0 w-[661px] h-40 text-[45px] font-bold text-left text-[#f573b0]"
+                  >supercharge </span
+                  ><span
+                    className="self-stretch flex-grow-0 flex-shrink-0 w-[661px] h-40 text-[45px] font-bold text-left text-neutral-100"
+                  >
+                  your </span
+                  ><span
+                    className="self-stretch flex-grow-0 flex-shrink-0 w-[661px] h-40 text-[45px] font-bold text-left text-white"
+                  >creative production capabilities</span
+                  >
+                  </p>
+                  <p
+                    className="self-stretch flex-grow-0 flex-shrink-0 w-[661px] h-[127px] text-lg font-bold text-left text-white"
+                  >
+                <span
+                  className="self-stretch flex-grow-0 flex-shrink-0 w-[661px] h-[127px] text-lg font-bold text-left text-white"
+                >Creative Volume is the single most important predictor of scale across social
+                  channels. Use this guide as a roadmap on how to multiply base creatives for an
+                  iterative approach to scale.</span
+                ><br/>
+                  </p>
+                </div>
+                <svg
+                  width="856"
+                  height="897"
+                  viewBox="0 0 856 897"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="flex-grow-0 flex-shrink-0"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <g filter="url(#filter0_f_813_118)">
+                    <ellipse
+                      cx="408.5"
+                      cy="448.5"
+                      rx="335"
+                      ry="335.5"
+                      fill="#5656BB"
+                      fill-opacity="0.5"
+                    ></ellipse>
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_f_813_118"
+                      x="-38.9"
+                      y="0.599998"
+                      width="894.8"
+                      height="895.8"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                      ></feBlend>
+                      <feGaussianBlur
+                        stdDeviation="56.2"
+                        result="effect1_foregroundBlur_813_118"
+                      ></feGaussianBlur>
+                    </filter>
+                  </defs>
+                </svg
+                >
+                <img
+                  src="blueprint.png"
+                  className="flex-grow-0 flex-shrink-0 w-[530px] h-[470px] object-cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 h-[813px] w-[612px] absolute left-[743.5px] top-0 gap-8"
+          >
+            <div
+              className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 h-[716px] w-[501px] relative gap-5"
+            >
+              <div
+                className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-[501px] relative gap-3"
+              >
+                <p
+                  className="flex-grow-0 flex-shrink-0 w-[233px] h-[37px] text-lg font-bold text-left text-white"
+                >
+                  What is your name?
+                </p>
+                <div
+                  className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-[501px] gap-[15px]"
+                >
+                  <div
+                    className="flex justify-start items-center flex-grow-0 flex-shrink-0 w-[501px] h-[61px] relative gap-[21px] px-[22px] py-2 rounded-[7px] bg-white/[0.08]"
+                  >
+                    <p className="flex-grow-0 flex-shrink-0 opacity-[0.26] text-lg text-left text-white">
+                      i.e John Ford
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-3"
+              >
+                <p
+                  className="flex-grow-0 flex-shrink-0 w-[439px] h-[37px] text-lg font-bold text-left text-white"
+                >
+                  What is your company email?
+                </p>
+                <div
+                  className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-[15px]"
+                >
+                  <div
+                    className="flex justify-start items-center flex-grow-0 flex-shrink-0 w-[501px] h-[61px] relative gap-[21px] px-[22px] py-2 rounded-[7px] bg-white/[0.08]"
+                  >
+                    <p className="flex-grow-0 flex-shrink-0 opacity-[0.26] text-lg text-left text-white">
+                      Type your answer
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-3"
+              >
+                <p
+                  className="flex-grow-0 flex-shrink-0 w-[439px] h-[37px] text-lg font-bold text-left text-white"
+                >
+                  How large is your company?
+                </p>
+                <div
+                  className="flex justify-between items-center self-stretch flex-grow-0 flex-shrink-0 h-[61px] relative px-[22px] py-2 rounded-[7px] bg-white/[0.08]"
+                >
+                  <p className="flex-grow-0 flex-shrink-0 text-lg text-left text-white">
+                    Total Employee Size
+                  </p>
+                  <div
+                    className="flex flex-col justify-center items-center flex-grow-0 flex-shrink-0 h-[35px] w-[35px] relative gap-2.5 p-2.5 rounded-[3px]"
+                  >
+                    <p
+                      className="flex-grow-0 flex-shrink-0 w-4 h-[30px] text-lg font-black text-left text-[#e4e4e4]"
+                    ></p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-3"
+              >
+                <p
+                  className="flex-grow-0 flex-shrink-0 w-[439px] h-[37px] text-lg font-bold text-left text-white"
+                >
+                  Current Marketing Challenges
+                </p>
+                <div
+                  className="flex justify-between items-center self-stretch flex-grow-0 flex-shrink-0 h-[61px] relative px-[22px] py-2 rounded-[7px] bg-white/[0.08]"
+                >
+                  <p className="flex-grow-0 flex-shrink-0 text-lg text-left text-white">
+                    Choose multiple options
+                  </p>
+                  <div
+                    className="flex flex-col justify-center items-center flex-grow-0 flex-shrink-0 w-[35px] h-[35px] gap-2.5 p-2.5 rounded-[3px]"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="flex justify-start items-center flex-grow-0 flex-shrink-0 w-[30px] h-[60px] gap-[66px]"
+            ></div>
+            <div
+              className="flex justify-center items-center flex-grow-0 flex-shrink-0 h-[63px] absolute left-[50px] top-[547px] gap-2.5 px-[54px] rounded-[5px]"
+              // style="background: linear-gradient(to right, );"
+            >
+              <p className="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-[#32327a]">
+                SCALE MY CREATIVE PRODUCTION
+              </p>
+            </div>
+
+            <LogoBanner/>
+          </div>
         </div>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
 }
