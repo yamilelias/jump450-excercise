@@ -1,4 +1,12 @@
-export const Input = ({ id, label, type, placeholder, onChange }) => (
+interface InputProps {
+  id: string;
+  label: string;
+  type: string;
+  placeholder: string;
+  onChange: (e: any) => void;
+}
+
+export const Input = ({ id, label, type, placeholder, onChange }: InputProps) => (
   <div
     className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-[501px] relative gap-3"
   >

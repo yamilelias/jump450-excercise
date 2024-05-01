@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import { Dropdown as FlowDropdown } from 'flowbite'
 
 interface DropdownProps {
@@ -13,7 +13,8 @@ export const Dropdown = ({ id, options, label, placeholder, onChange }: Dropdown
   const [selectedOption, setSelectedOption] = useState<string>(placeholder);
   const [open, setOpen] = useState(false);
 
-  const handleClick = (e) => {
+  const handleClick = (e: FormEvent<HTMLLIElement>) => {
+    // @ts-ignore
     const option = e.target.firstChild.data
 
     setSelectedOption(option);

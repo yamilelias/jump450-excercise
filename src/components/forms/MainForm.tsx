@@ -1,6 +1,18 @@
 import { useState } from 'react';
+// @ts-ignore
 import ZapierForm from 'react-zapier-form'
 import { Dropdown, Input } from '@/components/atoms';
+
+export interface FormValues {
+  name: string;
+  email: string;
+  companySize: string;
+  marketingChallenges: string;
+}
+
+interface MainFormProps {
+  onSubmit: (values: FormValues) => void
+}
 
 const companySizes = [
   '0-10',
@@ -17,10 +29,6 @@ const currentMarketingChallenges = [
   'Customer Retention',
   'Other',
 ]
-
-interface MainFormProps {
-  onSubmit: (values: Record<string, string>) => void;
-}
 
 export const MainForm = ({ onSubmit }: MainFormProps) => {
   const [values, setValues] = useState({});
@@ -51,7 +59,7 @@ export const MainForm = ({ onSubmit }: MainFormProps) => {
           <button type="submit"
                   onClick={onClick}
                   className="justify-center items-center font-extrabold text-lg text-indigo-700 uppercase w-[400px] h-[63px] bg-gradient-to-r from-yellow-200 to-red-500 hover:bg-gradient-to-l hover:transition-all focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Scale
-            my Creative Product
+            my Creative Production
           </button>
           {loading && <div>Loading...</div>}
           {error && <div>Something went wrong. Please try again later.</div>}

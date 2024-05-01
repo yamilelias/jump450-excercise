@@ -47,7 +47,7 @@ export const Infographic = () => (
                 ><br/>
           </p>
         </div>
-        <div className="relative mt-24">
+        <div className="relative mt-8">
           <img
             src="blueprint.png"
             className="flex-grow-0 flex-shrink-0 w-[530px] h-[470px] object-cover absolute lg:mt-20 md:mt-8"
