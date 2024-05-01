@@ -1,14 +1,11 @@
-import { Button, Link, MenuItem } from '@/components/atoms';
+import { Button, Logo, MenuItem } from '@/components/atoms';
 
 export const Navbar = () => (
   <nav
     className="bg-transparent w-full"
   >
     <div className="flex flex-wrap items-center justify-between mx-auto">
-      <img
-        src="logo.png"
-        className="h-11 object-cover"
-      />
+      <Logo />
       <button data-collapse-toggle="navbar-default" type="button"
               className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
               aria-controls="navbar-default" aria-expanded="false">
