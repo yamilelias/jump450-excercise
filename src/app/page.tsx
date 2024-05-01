@@ -4,10 +4,17 @@ import { LogoBanner } from '@/components/molecules';
 import { MainForm } from '@/components/forms';
 import { useFacebookPixel } from '@/hooks/useFacebookPixel';
 
+interface FormValues {
+  name: string;
+  email: string;
+  companySize: string;
+  marketingChallenges: string;
+}
+
 export default function Home() {
   const { track } = useFacebookPixel()
 
-  const handleSubmit = values => {
+  const handleSubmit = (values: FormValues) => {
     if(values.companySize === '50+') {
       console.log('values', values);
       track('Purchase')
