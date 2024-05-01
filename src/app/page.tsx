@@ -6,7 +6,7 @@ import { MainForm } from '@/components/forms';
 export default function Home() {
   return (
     <div
-      className="bg-gradient-to-b from-main-500 to-main-600 lg:px-7 px-12 flex py-7 w-[100%]"
+      className="bg-gradient-to-b from-main-500 to-main-600 lg:px-[150px] px-12 flex py-7 w-[100%]"
     >
       <div className="flex flex-col justify-start items-center">
         <Navbar/>
