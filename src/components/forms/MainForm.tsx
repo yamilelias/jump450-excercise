@@ -1,7 +1,7 @@
 export const MainForm = () => (
-  <>
+  <div className="flex justify-center items-center flex-col gap-8">
     <div
-      className="flex flex-col justify-start items-start relative gap-6"
+      className="flex flex-col justify-center items-center relative gap-6"
     >
       <div
         className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-[501px] relative gap-3"
@@ -87,8 +87,8 @@ export const MainForm = () => (
       </div>
     </div>
     <button type="button"
-            className="text-white font-bold text-lg text-indigo-800 uppercase w-[400px] h-[63px] bg-gradient-to-r from-yellow-200 to-red-500 hover:bg-gradient-to-l hover:transition-all focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Scale
+            className="justify-center items-center font-extrabold text-lg text-indigo-800 uppercase w-[400px] h-[63px] bg-gradient-to-r from-yellow-200 to-red-500 hover:bg-gradient-to-l hover:transition-all focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Scale
       my Creative Product
     </button>
-  </>
+  </div>
 )

@@ -1,6 +1,6 @@
 export const LogoBanner = () => (
-  <div className="flex flex-col w-100 items-center gap-4">
-    <div className="flex">
+  <div className="flex flex-col gap-4 w-full items-center justify-center">
+    <div className="flex items-center justify-center">
       <p
         className="text-[25px] font-bold text-center text-white"
       >
