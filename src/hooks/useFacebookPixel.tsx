@@ -1,7 +1,13 @@
 'use client'
 import { createContext, useContext, useEffect } from 'react';
 
-const FacebookPixelContext = createContext(null);
+interface IFacebookPixelContext {
+  track: (eventName: string) => void;
+}
+
+const FacebookPixelContext = createContext<IFacebookPixelContext>({
+  track: () => {}
+});
 
 export const useFacebookPixel = () => {
   const context = useContext(FacebookPixelContext);

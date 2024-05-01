@@ -1,4 +1,6 @@
-export const Button = ({ children }) => (
+import { ReactNode } from 'react';
+
+export const Button = ({ children }: { children: ReactNode}) => (
   <button
     className="flex justify-center items-center flex-grow-0 flex-shrink-0 w-[207px] relative gap-2.5 px-[54px] rounded-[5px] bg-[#ffc958] min-w-[207px] min-h-[60px]"
   >
