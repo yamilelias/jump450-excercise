@@ -1,9 +1,16 @@
-import Image from "next/image";
+'use client'
 import { Navbar } from '@/components/templates';
 import { LogoBanner } from '@/components/molecules';
 import { MainForm } from '@/components/forms';
+import { useFacebookPixel } from '@/hooks/useFacebookPixel';
 
 export default function Home() {
+  const { track } = useFacebookPixel()
+
+  const handleSubmit = () => {
+    track('ViewContent')
+  }
+
   return (
     <div
       className="bg-gradient-to-b from-main-500 to-main-600 lg:px-[150px] px-12 flex py-7 w-[100%]"
@@ -82,7 +89,7 @@ export default function Home() {
                         rx="335"
                         ry="335.5"
                         fill="#5656BB"
-                        fill-opacity="0.5"
+                        fillOpacity="0.5"
                       ></ellipse>
                     </g>
                     <defs>
@@ -93,9 +100,9 @@ export default function Home() {
                         width="894.8"
                         height="895.8"
                         filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB"
+                        colorInterpolationFilters="sRGB"
                       >
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                        <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
                         <feBlend
                           mode="normal"
                           in="SourceGraphic"
@@ -117,7 +124,7 @@ export default function Home() {
           <div
             className="flex flex-col justify-start items-start gap-16"
           >
-            <MainForm />
+            <MainForm onSubmit={handleSubmit} />
 
             <LogoBanner/>
           </div>
